@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free Chrome extension for reading Markdown files, README documents and technical notes. Outlines, code highlighting, source view and local file refresh.">
+  <meta name="theme-color" content="#365dd7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quire Markdown — Give Markdown room to read">
+  <meta property="og:description" content="Read local Markdown with a clear outline, highlighted code and a source view. Free, no accounts, no tracking.">
+  <meta property="og:url" content="https://dzoba.github.io/quire-markdown/">
+  <meta property="og:image" content="https://dzoba.github.io/quire-markdown/assets/reader-light.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://dzoba.github.io/quire-markdown/">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Quire Markdown — Viewer for Chrome</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap topbar">
+    <a class="brand" href="./"><img src="assets/icon.svg" width="40" height="40" alt="">Quire Markdown</a>
+    <nav aria-label="Main"><a href="#features">Features</a><a href="privacy.html">Privacy</a><a href="https://github.com/dzoba/quire-markdown/issues">Support</a></nav>
+  </div></header>
+  <main id="main">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="headline">
+        <div><h1 id="headline">Give Markdown room to read.</h1><p class="intro">A focused Chrome viewer for README files, technical notes and coding-agent plans. Open a document and get an outline, readable code and a little breathing room.</p></div>
+        <div class="install"><button type="button" disabled aria-describedby="releaseStatus">Chrome Web Store release pending</button><p id="releaseStatus">Free at launch. Installation will be available after Chrome Web Store review. No account required.</p></div>
+      </section>
+      <figure class="preview">
+        <div class="reader"><img src="assets/reader-light.png" width="1280" height="720" alt="Quire Markdown showing a rendered field guide, a heading outline and controls for reading, source view, find and theme."></div>
+        <figcaption>The built-in field guide, open in Quire Markdown. Your original file stays unchanged.</figcaption>
+      </figure>
+      <section class="features" id="features" aria-labelledby="featuresTitle">
+        <div><h2 id="featuresTitle">The useful parts, close at hand.</h2><p class="lead">Built for reading the files you already have. No upload step and no workspace to set up.</p></div>
+        <dl class="feature-list">
+          <div><dt>Navigate the document</dt><dd>Jump through an outline, find a passage, or switch between the rendered page, Markdown source and a split view.</dd></div>
+          <div><dt>Read the details</dt><dd>Tables, task lists and strikethrough render in place. Fenced code uses bundled syntax highlighting with a copy control. Choose a light, dark or system theme.</dd></div>
+          <div><dt>Keep up with a changing file</dt><dd>Choose a local file, then refresh it or enable Follow file while the viewer tab is visible. Useful when an editor or coding agent is updating a plan alongside you.</dd></div>
+          <div><dt>Carry a readable copy</dt><dd>Print the rendered document or download an HTML copy. Reopen up to ten recent documents stored in this browser profile.</dd></div>
+        </dl>
+      </section>
+      <figure class="preview secondary-preview"><div class="reader"><img src="assets/reader-dark-split.png" width="1280" height="720" loading="lazy" alt="Quire Markdown in its dark theme, with rendered content beside the original Markdown source."></div><figcaption>Split view keeps the rendered page and its Markdown source together.</figcaption></figure>
+    </div>
+    <section class="how" aria-labelledby="howTitle"><div class="wrap how-inner"><h2 id="howTitle">From plain text to a clear page.</h2><ol class="steps"><li><strong>Open your Markdown</strong><span>Choose a UTF-8 file, drop one into the viewer, or paste text. Documents can be up to 2 MB.</span></li><li><strong>Read it your way</strong><span>Use the outline, find, code copy controls and source view. The original file stays untouched.</span></li><li><strong>Keep or remove the local copy</strong><span>Recent documents stay in this browser profile. Remove a copy from Recent when you no longer want it saved there.</span></li></ol></div></section>
+    <section class="wrap faq" aria-labelledby="questionsTitle"><h2 id="questionsTitle">A few things to know.</h2><div class="questions">
+      <details open><summary>Does it send my documents anywhere?</summary><p>Local documents are processed in your browser and are not sent to us. There are no accounts, analytics or tracking scripts. If you explicitly open a web URL, Quire requests access to that website and retrieves the file without cookies or a referrer. <a href="privacy.html">Read the privacy details</a>.</p></details>
+      <details><summary>Can I edit Markdown in it?</summary><p>Quire Markdown is a viewer. It does not edit or overwrite original files. Edit in your preferred text editor and use Refresh or Follow file to see changes. Follow works for a file selected with Open file during the current viewer session; dropped files and recent copies are snapshots.</p></details>
+      <details><summary>What stays out of the rendered page?</summary><p>Images appear as blocked text references. Scripts, styles, forms and embedded content are removed. Diagrams and math are not rendered. Highlighting supports bundled common languages; unknown languages and large code blocks remain readable plain text.</p></details>
+      <details><summary>Can I open Markdown from a website?</summary><p>Yes, using a raw HTTP or HTTPS Markdown link after granting that origin access. Redirects are rejected. For a login-protected file or a redirecting link, download the file normally and open the local copy. The extension does not automatically replace every website you visit.</p></details>
+    </div></section>
+  </main>
+  <footer class="wrap footer"><p>Quire Markdown · A document viewer for Chrome.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="https://github.com/dzoba/quire-markdown/issues">Report an issue</a><a href="mailto:chris@dzoba.com">Contact</a></div></footer>
+</body>
+</html>

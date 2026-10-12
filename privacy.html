@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Quire Markdown handles local documents, recent copies, optional website requests and Chrome permissions.">
+  <meta name="theme-color" content="#365dd7">
+  <link rel="canonical" href="https://dzoba.github.io/quire-markdown/privacy.html">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Privacy — Quire Markdown</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap topbar"><a class="brand" href="./"><img src="assets/icon.svg" width="40" height="40" alt="">Quire Markdown</a><nav aria-label="Main"><a href="./">Overview</a><a href="https://github.com/dzoba/quire-markdown/issues">Support</a></nav></div></header>
+  <main class="wrap policy" id="main">
+    <h1>Privacy</h1><p class="date">Effective October 11, 2026</p>
+    <p class="statement">Quire Markdown processes the documents you open in your browser. We do not receive your document contents, filenames, recent-document history or reading settings.</p>
+    <h2>What stays in your browser</h2>
+    <p>The viewer uses local browser storage to make recent documents available when you return:</p>
+    <ul><li><strong>Document copies:</strong> text, filenames, an internal document identifier and a last-updated timestamp for up to ten recent documents. Opening a local file, pasting text or retrieving a web document can create a local copy.</li><li><strong>Preferences:</strong> your selected theme, reading/source view and the identifier of the last opened local document.</li><li><strong>During the current session:</strong> the open document, search terms, the current reading position and, if selected through Open file, a file handle used to read that file again. File handles are not saved across viewer sessions.</li></ul>
+    <p>Document text may contain personal or sensitive information you choose to open. It is handled locally for display, search, syntax highlighting, copying, printing, HTML export and recent-document storage. Quire does not add analytics, advertising, tracking pixels, usage telemetry or a cloud account.</p>
+    <h2>Removing local copies</h2>
+    <p>Use the remove control next to a document in Recent to delete its saved copy. An already open document can remain visible until you close or replace it. Original files and files you downloaded or exported are separate and are not deleted by this control.</p>
+    <p>The recent list retains at most ten copies; older copies may be removed as new ones are saved. Removing the extension or clearing its browser storage removes its saved local data. Local copies are a convenience, not a backup service. Browser storage can be cleared or become unavailable.</p>
+    <h2>Local file access and Follow file</h2>
+    <p>Quire can read the file you explicitly select through Chrome's file picker. It does not request permission to modify that file or read unrelated files. Refresh reads the selected file again. Follow file checks for changes while the viewer tab is visible, and applies only to that selected file during the current viewer session. Dropped files and reopened recent copies do not retain a connection to an original file.</p>
+    <h2>When you open a web link</h2>
+    <p>Opening a raw HTTP or HTTPS Markdown URL is an explicit action. Quire requests Chrome's optional permission for that URL's origin before retrieving the file. Access can be denied; you can instead download the file normally and open it locally.</p>
+    <p>The destination website receives an ordinary request for the URL, including normal connection information such as your IP address and browser request headers. Any query string in the URL is sent to that website. Quire sends no site cookies or referrer with this retrieval, rejects redirects, and does not upload other documents or send the request to a Quire server. A website may handle its request logs under its own privacy policy.</p>
+    <p>Quire does not keep a browsing-history log. Only the URL you explicitly choose is used for retrieval. Chrome may retain a previously granted origin permission; you can revoke site access in Chrome's extension settings. Website links you choose within a document, links to support, and email links are separate user-initiated actions handled by your browser or email app.</p>
+    <h2>Why Chrome permissions are requested</h2>
+    <dl class="permission-list"><dt>activeTab</dt><dd>Lets the toolbar action inspect the current tab's URL when you click it, so the selected URL can be offered to the viewer. It does not continuously monitor tabs or inject scripts into ordinary pages.</dd><dt>contextMenus</dt><dd>Adds the user-invoked “Open link in Quire Markdown” action for HTTP and HTTPS links.</dd><dt>Optional HTTP and HTTPS host access</dt><dd>Allows the viewer to retrieve a chosen raw Markdown file after asking for access to that origin. These permissions are optional; local files work without them.</dd></dl>
+    <h2>Content that cannot make background requests</h2>
+    <p>All images in a document become blocked text references. Document scripts, styles, forms, iframes and other embedded resources are removed before the rendered document is attached to the page. Rendering libraries are bundled with the extension rather than loaded from a CDN. Opening a local document does not require fetching its images, fonts, styles or scripts from a website.</p>
+    <h2>Chrome Web Store Limited Use</h2>
+    <p>Quire Markdown uses information obtained through Chrome permissions only to provide its Markdown reading features. This use complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. We do not sell this information, use it for advertising, transfer it for unrelated purposes, or use it to determine creditworthiness or lending eligibility.</p>
+    <h2>This website and support</h2>
+    <p>This website contains no analytics or tracking scripts. GitHub Pages serves it and may process ordinary connection information under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+    <p>If you email us or post a support issue, the information you choose to send is used to respond and investigate the issue. GitHub issues may be public. Please use a small example without private document contents when reporting a problem.</p>
+    <h2>Contact and changes</h2>
+    <p>Questions about Quire Markdown or this policy can be sent to <a href="mailto:chris@dzoba.com">chris@dzoba.com</a>. Policy changes will be posted on this page with an updated effective date.</p>
+  </main>
+  <footer class="wrap footer"><p>Quire Markdown</p><div class="footer-links"><a href="./">Overview</a><a href="https://github.com/dzoba/quire-markdown/issues">Report an issue</a><a href="mailto:chris@dzoba.com">Contact</a></div></footer>
+</body>
+</html>
